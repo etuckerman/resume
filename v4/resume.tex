@@ -1,0 +1,183 @@
+%-------------------------
+% Resume in Latex
+% Author : Elliot Tuckerman
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, itemsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabularx}{\textwidth}{Xr}
+  \textbf{\Huge Elliot Tuckerman} & 
+  \begin{minipage}[t]{0.5\textwidth}
+    \raggedleft
+    \textbf{Address:} Smyrna, GA, 30082, USA \\
+    \textbf{Email:} \href{mailto:elliottuckerman99@gmail.com}{elliottuckerman99@gmail.com} \\
+    \textbf{Mobile:} +1 (770) 871-6961 % updated to US format
+  \end{minipage} \\
+\end{tabularx}
+
+% GitHub, LinkedIn, and Portfolio on the same line
+\begin{tabular}{l l}
+  \href{https://github.com/etuckerman}{GitHub} & \href{https://github.com/etuckerman}{https://github.com/etuckerman} \\
+  \href{https://www.linkedin.com/in/elliottuckerman/}{LinkedIn} & \href{https://www.linkedin.com/in/elliottuckerman/}{https://www.linkedin.com/in/elliottuckerman/} \\
+  \href{https://etuckerman.github.io}{Portfolio} & \href{https://etuckerman.github.io}{https://etuckerman.github.io}
+\end{tabular}
+
+\begin{center}
+  Green Card holder; relocated from the UK to the USA. \\
+  Expertise in LLM optimization, NLP, and fine-tuning.
+\end{center}
+\vspace{-1cm}
+%-----------SKILLS-----------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item \textbf{Languages:} Python, C++, C\#, SQL
+   \item \textbf{Technologies:} NLP (spaCy, BERT, NLTK), Multi-GPU Training, Model Optimization
+   \item \textbf{Tools:} TensorFlow, PyTorch, Hugging Face, Scikit-learn, XGBoost, AWS, Git, Jupyter
+   \item \textbf{Practices:} Test-Driven Development (TDD), Object-Oriented Design (OOD), Version Control, Agile
+ \resumeSubHeadingListEnd
+
+
+\vspace{-0.5cm} % Adjust this value to reduce the gap
+
+%-----------EDUCATION-----------------
+\section{Education}
+ \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sheffield Hallam University}{Sheffield, UK}
+      {BSc in Computer Science; GPA: 4.0}{2020 -- 2024}
+      \resumeItemListStart
+        \resumeItem{Specialization}{Machine Learning and Heuristics}
+        \resumeItem{Relevant Coursework}{CS50's AI with Python (Harvard, edX), NLP with Transformers (Hugging Face)}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-0.5cm} % Adjust this value to reduce the gap
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {SPRK}{Tampa, FL}
+      {Machine Learning Engineer, Syllabus AI}{2024 - Present}
+      \resumeItemListStart
+        \resumeItem{Data Extraction}{Integrated LlamaParse to streamline the extraction of actionable data from college syllabi, greatly improving speed and accuracy. This cut manual processing time and ensured high-quality data.}
+        \resumeItem{Data Structuring}{Employed Qwen2.5-72B-Instruct to interpret extracted data, organizing it into structured JSON format that includes event details like descriptions and due dates. This data structure facilitates applications like academic calendars and notifications.}
+      \resumeItemListEnd
+\
+
+
+
+    \resumeSubheading
+      {DataAnnotation.tech}{Atlanta, GA}
+      {Machine Learning Engineer, LLM Optimization}{2023 - 2024}
+      \resumeItemListStart
+        \resumeItem{Code Evaluation}{Validated outputs from large language models.}
+        \resumeItem{Optimization}{Enhanced code for improved performance.}
+        \resumeItem{Model Management}{Supervised in-development model performance.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Sheffield Hallam University}{Sheffield, UK}
+      {Game Developer (C++)}{2020 -- 2024}
+      \resumeItemListStart
+        \resumeItem{AI Development}{Created AI for Tic-Tac-Toe and Minesweeper using advanced algorithms.}
+        \resumeItem{Project Management}{Led team, managing tasks and timelines.}
+        \resumeItem{Game Quality}{Produced high-performance, user-focused games.}
+        \resumeItem{Awards}{Won "2D Game of the Year" for innovative design.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-0.5cm}
+
+
+\section{Projects}
+    \resumeSubHeadingListStart  
+      \resumeSubItem{Llama 3.1 QA Fine-tune}
+        {Fine-tuned LLaMA 3.1 with TensorFlow, utilizing a custom dataset to improve language model performance for an RV company. Focused on optimization and evaluation.}
+      \resumeSubItem{Multilingual Speech Application}
+        {Commissioned by a customer service team to build a real-time multilingual speech application using MMS-TTS database. Implemented a queue system for translating and outputting multiple sentences simultaneously, producing live, natural-sounding voice translations.}
+      \resumeSubItem{Multi-GPU LLM Fine Tuning}
+        {Leveraged multi-GPU techniques in PyTorch to scale and optimize large language model training for improved efficiency.}
+      \resumeSubItem{AI-Powered CS:S Surfing Community Assistant}
+        {Developed a Python-based AI assistant using NLP to enhance player interaction in Counter-Strike: Source’s surfing community.}
+      \resumeSubItem{Vehicle Theft Analysis}
+        {Implemented data analysis with Python and Scikit-learn to extract insights from stolen vehicle datasets and develop predictive models.}
+      \resumeSubItem{PS5 3D Game Engine Development}
+        {Engineered a high-performance PS5 game engine using the Sony PS5 SDK, optimizing graphics and performance.}
+      \resumeSubItem{Unity Advanced Movement System}
+        {Developed an advanced movement system in Unity, enhancing physics realism and gameplay mechanics.}
+      \resumeSubItem{Personal Portfolio Website}
+        {Designed and developed a responsive portfolio website using HTML, CSS, and JavaScript. Hosted on GitHub Pages with a focus on showcasing AI/ML projects, blog posts, and technical skills.}
+    \resumeSubHeadingListEnd
+
+
+
+
+
+
+\end{document}
