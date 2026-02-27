@@ -1,0 +1,171 @@
+%-------------------------
+% Resume in Latex
+% Author : Elliot Tuckerman
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, itemsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabularx}{\textwidth}{Xr}
+  \textbf{\Huge Elliot Tuckerman} & 
+  \begin{minipage}[t]{0.5\textwidth}
+    \raggedleft
+    \textbf{Address:} Sheffield, UK \\
+    \textbf{Email:} \href{mailto:elliottuckerman99@gmail.com}{elliottuckerman99@gmail.com} \\
+    \textbf{Mobile:} +44 7908 756278
+  \end{minipage} \\
+\end{tabularx}
+
+\begin{tabular}{l l}
+  \href{https://github.com/etuckerman}{GitHub} & \href{https://github.com/etuckerman}{https://github.com/etuckerman} \\
+  \href{https://www.linkedin.com/in/elliottuckerman/}{LinkedIn} & \href{https://www.linkedin.com/in/elliottuckerman/}{https://www.linkedin.com/in/elliottuckerman/} \\
+  \href{https://etuckerman.github.io}{Portfolio} & \href{https://etuckerman.github.io}{https://etuckerman.github.io}
+\end{tabular}
+
+\vspace{-0.2cm}
+\begin{center}
+FAANG-experienced AI \& Software Engineer specialising in LLM security and scalable systems.
+\end{center}
+\vspace{-0.8cm}
+
+%-----------SKILLS-----------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item \textbf{Languages:} Python, C++, C\#, SQL
+   \item \textbf{Technologies:} NLP (spaCy, BERT, NLTK), Multi-GPU Training, Model Optimization
+   \item \textbf{Tools:} TensorFlow, PyTorch, Hugging Face, Scikit-learn, XGBoost, AWS, Git, Jupyter
+   \item \textbf{Practices:} TDD, OOD, Version Control, Agile
+ \resumeSubHeadingListEnd
+
+\vspace{-0.5cm}
+
+%-----------EDUCATION-----------------
+\section{Education}
+ \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sheffield Hallam University}{Sheffield, UK}
+      {BSc in Computer Science; GPA: 4.0}{2020 -- 2024}
+      \resumeItemListStart
+        \resumeItem{Specialization}{Machine Learning and Heuristics}
+        \resumeItem{Additional Coursework}{CS50's AI with Python (Harvard, edX), NLP with Transformers (Hugging Face)}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\vspace{-0.5cm}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+  {META}{Atlanta, GA, USA}
+  {Gen AI Contractor, Security Delivery Management Team}{2025 – 2026}
+  \resumeItemListStart
+    \resumeItem{Prompt Injection Mitigation}{Labeled and analyzed GenAI outputs to detect and prevent prompt injection attacks in UI-interacting agents.}
+    \resumeItem{LLM Behavior Evaluation}{Tested agent behavior and safety within simulated environments, contributing to alignment and robustness efforts.}
+    \resumeItem{Synthetic Data Generation}{Triggered high-stakes agent actions and exported traces for manual annotation, producing high-quality fine-tuning data.}
+    \resumeItem{MLE Collaboration}{Led discussions with ML engineers to improve synthetic data generation and evaluation refinement.}
+    \resumeItem{Secure AI Operations}{Collaborated with AI and security teams to support safe deployment of foundation models.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {SPRK}{Tampa, FL, USA}
+  {Machine Learning Engineer, Prompt Engineer}{2024 – 2025}
+  \resumeItemListStart
+    \resumeItem{Data Parsing \& Extraction}{Built scalable parsing tools using LlamaParse to extract imagery and tabular content from academic documents.}
+    \resumeItem{Structured Data Pipeline}{Used Qwen2.5-72B-Instruct to transform raw data into structured JSON for academic applications.}
+    \resumeItem{Multimodal RAG System}{Developed math-solving and scheduling chatbot systems integrating image parsing and agent workflows.}
+    \resumeItem{Advanced Prompt Engineering}{Researched and benchmarked state-of-the-art models to optimize performance.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {DataAnnotation.tech}{Atlanta, GA, USA}
+  {Machine Learning Engineer, LLM Optimization}{2023 – 2024}
+  \resumeItemListStart
+    \resumeItem{Code Evaluation}{Validated outputs from large language models.}
+    \resumeItem{Optimization}{Enhanced generated code for performance and correctness.}
+    \resumeItem{Model Supervision}{Monitored and guided in-development model performance.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-0.75cm}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart  
+  \resumeSubItem{Llama 3.1 QA Fine-tune}
+    {Fine-tuned LLaMA 3.1 with TensorFlow using a custom dataset to improve domain-specific QA performance.}
+  \resumeSubItem{Multilingual Speech Application}
+    {Built a real-time multilingual speech system using MMS-TTS with queue-based translation and live audio output.}
+  \resumeSubItem{Multi-GPU LLM Fine-Tuning}
+    {Implemented distributed training in PyTorch to scale large language model optimization.}
+  \resumeSubItem{Vehicle Theft Analysis}
+    {Developed predictive models using Python and Scikit-learn to extract insights from crime datasets.}
+\resumeSubHeadingListEnd
+
+\end{document}
